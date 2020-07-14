@@ -36,6 +36,13 @@ public class Posto implements Serializable {
     /**
     * @generated
     */
+    @Column(name = "posto", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String posto;
+
+    /**
+    * @generated
+    */
     @Column(name = "cep", nullable = true, unique = false, insertable=true, updatable=true)
         
         private java.lang.String cep;
@@ -85,6 +92,25 @@ public class Posto implements Serializable {
     */
     public Posto setId(java.lang.String id){
         this.id = id;
+        return this;
+    }
+    /**
+    * Obtém posto
+    * return posto
+    * @generated
+    */
+    
+    public java.lang.String getPosto(){
+        return this.posto;
+    }
+
+    /**
+    * Define posto
+    * @param posto posto
+    * @generated
+    */
+    public Posto setPosto(java.lang.String posto){
+        this.posto = posto;
         return this;
     }
     /**

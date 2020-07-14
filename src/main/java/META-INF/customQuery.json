@@ -1371,7 +1371,12 @@
       "onError": null
     },
     "defaultValues": {
-      "id": {
+      "id": null,
+      "placa": null,
+      "marca": null,
+      "modelo": null,
+      "ano": null,
+      "user": {
         "type": "server",
         "blocklyMethod": "obterIdLogado",
         "blocklyClass": "blockly.Usuario",
@@ -1395,12 +1400,7 @@
         "blocklyDELETEMethod": null,
         "blocklyFILTERMethod": null,
         "blocklyCOUNTMethod": null
-      },
-      "placa": null,
-      "marca": null,
-      "modelo": null,
-      "ano": null,
-      "user": null
+      }
     },
     "defaultValuesProperties": {
       "id": null,

@@ -11,9 +11,9 @@
         <class>app.entity.View</class>
         <class>app.entity.Posto</class>
         <class>app.entity.RoleSecurable</class>
+        <class>app.entity.Carro</class>
         <class>app.entity.Securable</class>
         <class>app.entity.UserSecurable</class>
-        <class>app.entity.Carro</class>
         <class>app.entity.Device</class>
         <class>app.entity.Role</class>
         <properties>
