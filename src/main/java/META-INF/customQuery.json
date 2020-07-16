@@ -1554,9 +1554,93 @@
       "km": null,
       "precoLitro": null
     },
-    "calcFields": {},
-    "calcFieldsSecurity": {},
-    "calcFieldsProperties": {},
+    "calcFields": {
+      "custoKm": {
+        "blocklyClass": "blockly.Abastecimento",
+        "blocklyMethod": "custoKm",
+        "blocklyLanguage": "java",
+        "blocklyParams": [
+          {
+            "name": "Entidade\u003capp.entity.Abastecimento\u003e",
+            "value": "data",
+            "type": "CUSTOM"
+          }
+        ],
+        "blocklyJson": {
+          "namespace": "blockly.Abastecimento",
+          "sourcePath": "src/main/java/blockly/Abastecimento.blockly",
+          "language": "java",
+          "class": "blockly.Abastecimento",
+          "methods": [
+            {
+              "name": "custoKm",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u003capp.entity.Abastecimento\u003e"
+              ]
+            }
+          ]
+        },
+        "blocklyGETMethod": null,
+        "blocklyPOSTMethod": null,
+        "blocklyPUTMethod": null,
+        "blocklyDELETEMethod": null,
+        "blocklyFILTERMethod": null,
+        "blocklyCOUNTMethod": null
+      },
+      "kmPorLitro": {
+        "type": "server",
+        "blocklyMethod": "kmPorLitro",
+        "blocklyClass": "blockly.Abastecimento",
+        "blocklyLanguage": "java",
+        "blocklyParams": [
+          {
+            "name": "Entidade\u0026lt;app.entity.Abastecimento\u0026gt;",
+            "value": "data",
+            "type": "CUSTOM"
+          }
+        ],
+        "blocklyJson": {
+          "namespace": "blockly.Abastecimento",
+          "sourcePath": "src/main/java/blockly/Abastecimento.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "kmPorLitro",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.Abastecimento\u0026gt;"
+              ]
+            },
+            {
+              "name": "custoKm",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.Abastecimento\u0026gt;"
+              ]
+            }
+          ]
+        },
+        "blocklyGETMethod": null,
+        "blocklyPOSTMethod": null,
+        "blocklyPUTMethod": null,
+        "blocklyDELETEMethod": null,
+        "blocklyFILTERMethod": null,
+        "blocklyCOUNTMethod": null
+      }
+    },
+    "calcFieldsSecurity": {
+      "custoKm": null,
+      "kmPorLitro": null
+    },
+    "calcFieldsProperties": {
+      "custoKm": {
+        "type": "Double"
+      },
+      "kmPorLitro": {
+        "type": "Double"
+      }
+    },
     "errorHandles": {
       "primaryKey": null,
       "foreignKey": null

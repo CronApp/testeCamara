@@ -741,7 +741,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 70.375,
+          "ref-x": 70.078125,
           "text": "Texto\nTexto\nTexto\nTexto\nInteiro\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -804,7 +804,7 @@
           "dbPrecision": "",
           "dbScale": "",
           "dbDefaultValue": "",
-          "label": "Placa",
+          "label": "{{\u0027Placa\u0027 | translate}}",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -904,13 +904,17 @@
           "name": "user",
           "type": "User",
           "dbName": "fk_user",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
           "label": "",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
           "isNullable": true,
-          "multitenantContext": "",
           "pkType": "",
+          "multitenantContext": "",
           "jsonIgnore": false,
           "isTransient": false,
           "isInsertable": true,
@@ -918,6 +922,7 @@
           "isEncryption": false,
           "referencedColumnName": "",
           "isSearchable": false,
+          "sequence": "",
           "isCascade": false,
           "isVersion": false
         }
@@ -938,8 +943,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 151.71195220947266,
-        "width": 118.234375
+        "height": 151.31351470947266,
+        "width": 118.65625
       },
       "tableName": "",
       "tableScheme": null,
@@ -2378,7 +2383,7 @@
         "twoFactorEnabled:java.lang.Boolean",
         "userName:java.lang.String",
         "theme:java.lang.String",
-        "picture:java.lang.String"
+        "picture:Image Upload (to Database)"
       ],
       "attrs": {
         ".": {
@@ -2394,8 +2399,8 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 155.5625,
-          "text": "Texto\nInteiro\nTexto\nLógico\nLógico\nData e Hora\nTexto\nTexto\nTexto\nTexto\nTexto\nLógico\nTexto\nLógico\nTexto\nTexto\nTexto\n"
+          "ref-x": 155.453125,
+          "text": "Texto\nInteiro\nTexto\nLógico\nLógico\nData e Hora\nTexto\nTexto\nTexto\nTexto\nTexto\nLógico\nTexto\nLógico\nTexto\nTexto\nImagem no Banco\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
@@ -2909,7 +2914,7 @@
         },
         {
           "name": "picture",
-          "type": "java.lang.String",
+          "type": "Image Upload (to Database)",
           "dbName": "picture",
           "dbLength": 255,
           "dbPrecision": "",
@@ -3024,8 +3029,8 @@
         ""
       ],
       "size": {
-        "height": 272.18055725097656,
-        "width": 232.15625
+        "height": 271.78211975097656,
+        "width": 262.734375
       },
       "tableName": "USER",
       "type": "uml.Class",
