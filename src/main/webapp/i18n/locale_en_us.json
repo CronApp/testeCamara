@@ -110,7 +110,7 @@
   "Agent": "Agent",
   "Server": "Server",
   "AffectedFields": "Affected fields",
-  "Data": "Data",
+  "Data": "Date",
   "Details": "Details",
   "LinkCertificate": "Link Certificate",
   "CertificateLogin": "Login with Certificate",
@@ -164,5 +164,6 @@
   "Token": "Token",
   "TraceMethodAllowed": "Trace method allowed",
   "TwoFactorEnabled": "Two factor enabled",
-  "UserName": "Username"
+  "UserName": "Username",
+  "dtfim": "The end"
 }

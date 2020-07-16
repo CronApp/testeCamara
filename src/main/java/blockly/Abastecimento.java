@@ -1,11 +1,13 @@
 package blockly;
 
 import cronapi.*;
+import cronapi.rest.security.CronappAudit;
 import cronapi.rest.security.CronappSecurity;
 import java.util.concurrent.Callable;
 
 
 
+@CronappAudit
 @CronapiMetaData(type = "blockly")
 @CronappSecurity
 public class Abastecimento {

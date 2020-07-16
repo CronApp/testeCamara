@@ -741,7 +741,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 70.078125,
+          "ref-x": 70.328125,
           "text": "Texto\nTexto\nTexto\nTexto\nInteiro\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -768,7 +768,7 @@
           "stroke-width": 2
         }
       },
-      "audit": false,
+      "audit": true,
       "fields": [
         {
           "name": "id",
@@ -943,8 +943,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 151.31351470947266,
-        "width": 118.65625
+        "height": 151.75101470947266,
+        "width": 118.15625
       },
       "tableName": "",
       "tableScheme": null,
@@ -1477,6 +1477,156 @@
       "type": "uml.Class",
       "uniqueKeys": [],
       "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "id:java.lang.String",
+        "texto:java.lang.String",
+        "data:java.sql.Timestamp"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 90,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "id\ntexto\ndata\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 59.015625,
+          "text": "Texto\nTexto\nData e Hora com Fuso\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "Noticia"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false
+        },
+        {
+          "name": "texto",
+          "type": "java.lang.String",
+          "dbName": "texto",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Texto",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false
+        },
+        {
+          "name": "data",
+          "type": "java.sql.Timestamp",
+          "dbName": "data",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "Calendar.getInstance().getTime()",
+          "label": "{{\u0027Data\u0027 | translate}}",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false
+        }
+      ],
+      "generateView": "Auto",
+      "id": "b53e5cbf-a3b2-4100-a59e-1adcf8f9224c",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "Noticia",
+      "position": {
+        "x": 634,
+        "y": 178
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 119.13465118408203,
+        "width": 186.921875
+      },
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 24
     },
     {
       "angle": 0,
@@ -4351,6 +4501,7 @@
       "name": "Posto",
       "id": "0a89a51b-aa0d-42c0-949d-f437253a79fd",
       "cells": [
+        "b53e5cbf-a3b2-4100-a59e-1adcf8f9224c",
         "7a368748-81e2-4a48-9a0b-17472f245cdb",
         "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
         "4ae17c0c-5096-4a28-8dbc-406e4ab77648",
@@ -4366,6 +4517,7 @@
         "2016ad54-a0f9-4337-ad10-694a48f0435c",
         "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
         "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
+        "b53e5cbf-a3b2-4100-a59e-1adcf8f9224c",
         "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
         "7a368748-81e2-4a48-9a0b-17472f245cdb",
         "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
