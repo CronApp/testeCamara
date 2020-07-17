@@ -36,7 +36,7 @@ public class Noticia implements Serializable {
     /**
     * @generated
     */
-    @Column(name = "texto", nullable = true, unique = false, insertable=true, updatable=true)
+    @Column(name = "texto", nullable = false, unique = false, insertable=true, updatable=true)
         
         private java.lang.String texto;
 
@@ -44,7 +44,7 @@ public class Noticia implements Serializable {
     * @generated
     */
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "data", nullable = true, unique = false, insertable=true, updatable=true, columnDefinition = "TIMESTAMP")
+    @Column(name = "data", nullable = false, unique = false, insertable=true, updatable=true, columnDefinition = "TIMESTAMP")
         
         private java.util.Date data = Calendar.getInstance().getTime();
 

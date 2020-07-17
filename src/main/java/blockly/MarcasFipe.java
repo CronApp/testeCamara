@@ -7,7 +7,7 @@ import java.util.concurrent.Callable;
 
 
 @CronapiMetaData(type = "blockly")
-@CronappSecurity
+@CronappSecurity(post = "Public", get = "Public", execute = "Public", delete = "Public", put = "Public")
 public class MarcasFipe {
 
 public static final int TIMEOUT = 300;

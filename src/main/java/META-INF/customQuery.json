@@ -1662,7 +1662,7 @@
     "audit": false
   },
   "query718495": {
-    "customId": "query718495",
+    "customId": "postonews",
     "queryName": "postoNews",
     "sourceType": "entityFullName",
     "baseEntity": null,
@@ -1675,7 +1675,8 @@
         {
           "entity": "Posto",
           "alias": "p",
-          "namespace": "app.entity.Posto"
+          "namespace": "app.entity.Posto",
+          "name": "Posto"
         }
       ],
       "rulesSelect": [
@@ -1697,7 +1698,9 @@
     "queryParamsValues": [],
     "verbs": {
       "GET": true,
-      "GETAuthorities": null,
+      "GETAuthorities": [
+        "Public"
+      ],
       "POST": true,
       "POSTAuthorities": null,
       "PUT": true,
@@ -2060,17 +2063,29 @@
     "queryParamsValues": [],
     "verbs": {
       "GET": true,
-      "GETAuthorities": null,
-      "POST": false,
-      "POSTAuthorities": null,
-      "PUT": false,
-      "PUTAuthorities": null,
-      "DELETE": false,
-      "DELETEAuthorities": null,
-      "FILTER": false,
-      "FILTERAuthorities": null,
+      "GETAuthorities": [
+        "Public"
+      ],
+      "POST": true,
+      "POSTAuthorities": [
+        "Public"
+      ],
+      "PUT": true,
+      "PUTAuthorities": [
+        "Public"
+      ],
+      "DELETE": true,
+      "DELETEAuthorities": [
+        "Public"
+      ],
+      "FILTER": true,
+      "FILTERAuthorities": [
+        "Public"
+      ],
       "COUNT": true,
-      "COUNTAuthorities": null
+      "COUNTAuthorities": [
+        "Public"
+      ]
     },
     "events": {
       "beforeInsert": null,
@@ -2105,7 +2120,96 @@
       "primaryKey": null,
       "foreignKey": null
     },
-    "serviceUrl": "api/cronapi/odata/v2/app/query798195/",
+    "serviceUrl": "api/cronapi/odata/v2/dbext/query798195/",
+    "audit": false
+  },
+  "query183253": {
+    "customId": "query183253",
+    "queryName": "custoMedioKm",
+    "sourceType": "blockly",
+    "baseEntity": null,
+    "blockly": {
+      "type": "server",
+      "blocklyMethod": "custoMedioKm",
+      "blocklyClass": "blockly.Estatisticas",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Estatisticas",
+        "sourcePath": "src/main/java/blockly/Estatisticas.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "custoMedioKm",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": "custoMedioKm",
+      "blocklyPOSTMethod": "custoMedioKm",
+      "blocklyPUTMethod": "custoMedioKm",
+      "blocklyDELETEMethod": "custoMedioKm",
+      "blocklyFILTERMethod": "custoMedioKm",
+      "blocklyCOUNTMethod": "custoMedioKm"
+    },
+    "entitySimpleName": null,
+    "entityFullName": null,
+    "query": "",
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onError": null
+    },
+    "defaultValues": {},
+    "defaultValuesProperties": {},
+    "security": {},
+    "calcFields": {
+      "custoMedio": null,
+      "marca": null,
+      "modelo": null
+    },
+    "calcFieldsSecurity": {
+      "custoMedio": null,
+      "marca": null,
+      "modelo": null
+    },
+    "calcFieldsProperties": {
+      "custoMedio": {
+        "type": "Double"
+      },
+      "marca": {
+        "type": "String"
+      },
+      "modelo": {
+        "type": "String"
+      }
+    },
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query183253/",
     "audit": false
   }
 }
